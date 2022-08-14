@@ -1,0 +1,12 @@
+---
+- name: create a user account
+  hosts: all
+  tasks:
+    - name:  create user nene
+      user:
+        name: nene
+
+    - name: nene to the wheel group
+      user:
+       name:  nene
+       groups: wheel
